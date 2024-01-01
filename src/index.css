@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #0F0F0F;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Navbar styles */
+.nav-container {
+  width: 100%;
+  height: 10%;
+  /*this will decide background color */
+  background: rgba(0, 0, 0, 0.3);
+  /* It will keep the navbar stick to the top */
+  border-bottom: 1px solid #1a1625;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2em;
+  list-style: none;
+
+}
+
+.nav-link>li>a {
+  font-family: 'Source Serif 4';
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: .15vw;
+  transition: color 0.3s ease;
+}
+
+.nav-link>li>a:hover {
+  color: #66ccff;
+}
+
+.nav-link>li {
+  margin-right: 5%;
+}
+
+/* Main App Page Styles */
+.app-container {
+  /* Defining the sizes of 100 viewport width and 100 viewport height */
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar-container {
+  min-width: 5%;
+  background-color: '#0a0a0a';
+  border: '2px solid black';
+}
+
+.sidebar-container>ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar-container>ul>li {
+  color: aquamarine;
+}
